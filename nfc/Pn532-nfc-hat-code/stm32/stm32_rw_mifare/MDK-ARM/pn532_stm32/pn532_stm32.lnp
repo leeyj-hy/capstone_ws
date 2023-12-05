@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"pn532_stm32\startup_stm32f103xb.o"
+"pn532_stm32\main.o"
+"pn532_stm32\stm32f1xx_it.o"
+"pn532_stm32\stm32f1xx_hal_msp.o"
+"pn532_stm32\pn532.o"
+"pn532_stm32\pn532_stm32f1.o"
+"pn532_stm32\stm32f1xx_hal_gpio_ex.o"
+"pn532_stm32\stm32f1xx_hal_spi.o"
+"pn532_stm32\stm32f1xx_hal_spi_ex.o"
+"pn532_stm32\stm32f1xx_hal_tim.o"
+"pn532_stm32\stm32f1xx_hal_tim_ex.o"
+"pn532_stm32\stm32f1xx_hal_uart.o"
+"pn532_stm32\stm32f1xx_hal.o"
+"pn532_stm32\stm32f1xx_hal_rcc.o"
+"pn532_stm32\stm32f1xx_hal_rcc_ex.o"
+"pn532_stm32\stm32f1xx_hal_gpio.o"
+"pn532_stm32\stm32f1xx_hal_dma.o"
+"pn532_stm32\stm32f1xx_hal_cortex.o"
+"pn532_stm32\stm32f1xx_hal_pwr.o"
+"pn532_stm32\stm32f1xx_hal_flash.o"
+"pn532_stm32\stm32f1xx_hal_flash_ex.o"
+"pn532_stm32\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "pn532_stm32\pn532_stm32.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pn532_stm32.map" -o pn532_stm32\pn532_stm32.axf
